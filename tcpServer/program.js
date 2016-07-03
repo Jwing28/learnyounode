@@ -16,3 +16,7 @@ var fulldate = date.getFullYear() + "-" + "0" + (date.getMonth() + 1) + "-"+ "0"
     socket.end(fulldate);
 });  
 server.listen(process.argv[2]);
+
+//Resulting output: "2016-07-03 22:05" 
+//socket object allows us to stop listening and provide an
+//end response to our server stoppage.
